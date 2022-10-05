@@ -1,0 +1,22 @@
+<?php
+	setcookie("test", "тест", time()+3600);
+	if(isset($_COOKIE["test"]))
+	echo "установлена";
+	else
+	echo "нет";
+ ?>
+ <!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+	<head>
+		<title>Ускова.день рождения</title>
+	</head>
+	<body>
+		<form action="primer.php" method="POST">
+			<h3>Когда ваш день рождения?</h3>
+			<p>Напишите дату в формате дд.мм.гггг</p>
+			<input type="data" name="dr" />
+			<input type="submit" name="otpravit" value="ОК" />
+		</form>
+	</body>
+</html>
